@@ -1,16 +1,4 @@
 local library = {}
-function play(id)
-    for _, v in next, workspace:GetChildren() do
-        if v.Name == "GUISound" then
-            v:Destroy()
-        end
-    end
-    local Sound = Instance.new("Sound", workspace)
-    Sound.Name = "GUISound"
-    Sound.Volume = 6
-    Sound.SoundId = id
-    Sound:Play()
- end
 
 function library:CreateWindow(name)
 
